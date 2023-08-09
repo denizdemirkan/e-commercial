@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+    <Folder Include="DbContexts\" />
+    <Folder Include="UnitOfWorks\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECommercial.Core\ECommercial.Core.csproj" />
+  </ItemGroup>
+
 </Project>

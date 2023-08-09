@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="UnitOfWorks\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECommercial.SharedLibrary\ECommercial.SharedLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

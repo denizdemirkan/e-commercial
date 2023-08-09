@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ECommercial.ResourceAPI.props" />
+</Project>

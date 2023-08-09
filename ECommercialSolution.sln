@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommercial.Core", "ECommercial.Core\ECommercial.Core.csproj", "{C50A8D60-CE14-4F61-99AC-BB6BB04B45CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommercial.Core", "ECommercial.Core\ECommercial.Core.csproj", "{C50A8D60-CE14-4F61-99AC-BB6BB04B45CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommercial.Repository", "ECommercial.Repository\ECommercial.Repository.csproj", "{58265D66-B1CD-43C8-B9FB-AAF3D9A734C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommercial.Service", "ECommercial.Service\ECommercial.Service.csproj", "{62D8CB4F-2B06-4B32-8034-61078FB10D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommercial.ResourceAPI", "ECommercial.ResourceAPI\ECommercial.ResourceAPI.csproj", "{F8CF8C67-7B0B-4608-9FD2-A904691169FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommercial.AuthAPI", "ECommercial.AuthAPI\ECommercial.AuthAPI.csproj", "{DD86217C-390E-4830-8369-41A3CE741B19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommercial.SharedLibrary", "ECommercial.SharedLibrary\ECommercial.SharedLibrary.csproj", "{3054DB4B-4100-4154-9AB7-B9B2B4B3B429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommercial.PresentationMVC", "ECommercial.PresentationMVC\ECommercial.PresentationMVC.csproj", "{189BE8FA-A954-43C2-82D7-3D19AD2691F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,30 @@ Global
 		{C50A8D60-CE14-4F61-99AC-BB6BB04B45CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C50A8D60-CE14-4F61-99AC-BB6BB04B45CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C50A8D60-CE14-4F61-99AC-BB6BB04B45CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58265D66-B1CD-43C8-B9FB-AAF3D9A734C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58265D66-B1CD-43C8-B9FB-AAF3D9A734C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58265D66-B1CD-43C8-B9FB-AAF3D9A734C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58265D66-B1CD-43C8-B9FB-AAF3D9A734C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D8CB4F-2B06-4B32-8034-61078FB10D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D8CB4F-2B06-4B32-8034-61078FB10D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D8CB4F-2B06-4B32-8034-61078FB10D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D8CB4F-2B06-4B32-8034-61078FB10D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CF8C67-7B0B-4608-9FD2-A904691169FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CF8C67-7B0B-4608-9FD2-A904691169FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CF8C67-7B0B-4608-9FD2-A904691169FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CF8C67-7B0B-4608-9FD2-A904691169FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD86217C-390E-4830-8369-41A3CE741B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD86217C-390E-4830-8369-41A3CE741B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD86217C-390E-4830-8369-41A3CE741B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD86217C-390E-4830-8369-41A3CE741B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3054DB4B-4100-4154-9AB7-B9B2B4B3B429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3054DB4B-4100-4154-9AB7-B9B2B4B3B429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3054DB4B-4100-4154-9AB7-B9B2B4B3B429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3054DB4B-4100-4154-9AB7-B9B2B4B3B429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189BE8FA-A954-43C2-82D7-3D19AD2691F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189BE8FA-A954-43C2-82D7-3D19AD2691F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189BE8FA-A954-43C2-82D7-3D19AD2691F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189BE8FA-A954-43C2-82D7-3D19AD2691F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

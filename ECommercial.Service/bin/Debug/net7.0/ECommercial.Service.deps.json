@@ -1,0 +1,62 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ECommercial.Service/1.0.0": {
+        "dependencies": {
+          "ECommercial.Repository": "1.0.0"
+        },
+        "runtime": {
+          "ECommercial.Service.dll": {}
+        }
+      },
+      "ECommercial.Core/1.0.0": {
+        "dependencies": {
+          "ECommercial.SharedLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ECommercial.Core.dll": {}
+        }
+      },
+      "ECommercial.Repository/1.0.0": {
+        "dependencies": {
+          "ECommercial.Core": "1.0.0"
+        },
+        "runtime": {
+          "ECommercial.Repository.dll": {}
+        }
+      },
+      "ECommercial.SharedLibrary/1.0.0": {
+        "runtime": {
+          "ECommercial.SharedLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ECommercial.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ECommercial.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ECommercial.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ECommercial.SharedLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

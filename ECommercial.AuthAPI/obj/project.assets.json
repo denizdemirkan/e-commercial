@@ -107,6 +107,55 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ECommercial.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ECommercial.SharedLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ECommercial.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommercial.Core.dll": {}
+        }
+      },
+      "ECommercial.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ECommercial.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ECommercial.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommercial.Repository.dll": {}
+        }
+      },
+      "ECommercial.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ECommercial.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ECommercial.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommercial.Service.dll": {}
+        }
+      },
+      "ECommercial.SharedLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ECommercial.SharedLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommercial.SharedLibrary.dll": {}
+        }
       }
     }
   },
@@ -460,10 +509,31 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ECommercial.Core/1.0.0": {
+      "type": "project",
+      "path": "../ECommercial.Core/ECommercial.Core.csproj",
+      "msbuildProject": "../ECommercial.Core/ECommercial.Core.csproj"
+    },
+    "ECommercial.Repository/1.0.0": {
+      "type": "project",
+      "path": "../ECommercial.Repository/ECommercial.Repository.csproj",
+      "msbuildProject": "../ECommercial.Repository/ECommercial.Repository.csproj"
+    },
+    "ECommercial.Service/1.0.0": {
+      "type": "project",
+      "path": "../ECommercial.Service/ECommercial.Service.csproj",
+      "msbuildProject": "../ECommercial.Service/ECommercial.Service.csproj"
+    },
+    "ECommercial.SharedLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ECommercial.SharedLibrary/ECommercial.SharedLibrary.csproj",
+      "msbuildProject": "../ECommercial.SharedLibrary/ECommercial.SharedLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "ECommercial.Service >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -489,13 +559,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.307\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\deniz\\source\\repos\\ECommercialSolution\\ECommercial.Service\\ECommercial.Service.csproj": {
+              "projectPath": "C:\\Users\\deniz\\source\\repos\\ECommercialSolution\\ECommercial.Service\\ECommercial.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -536,7 +610,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
       }
     }
   }
