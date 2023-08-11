@@ -12,21 +12,20 @@ namespace ECommercial.Core.Entities
         {
             this.Comments = new HashSet<Comment>();
             this.Categories = new HashSet<Category>();
+            this.Variants = new HashSet<Variant>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
         public decimal SalePrice { get; set; }  // actual value
         public decimal ListPrice { get; set; }  // actual sell price
-
-        // need single image
+        public Image Image { get; set; }
 
         // bunu binary olarak tutabilirim? TinyMCE ile çevirmece..
         public string Description { get; set; }
 
         public ICollection<Comment> Comments { get; set; }
-
+        public ICollection<Variant> Variants { get; set; }
         public ICollection<Category> Categories { get; set; }
-
     }
 }

@@ -10,11 +10,11 @@ namespace ECommercial.Core.Entities
     {
         public ShoppingCart()
         {
-            this.Products = new HashSet<ShoppingCartItem>();
+            this.ShoppingCartItems = new HashSet<ShoppingCartItem>();
         }
 
         public int Id { get; set; }
         public bool isUser { get; set; }
-        public ICollection<ShoppingCartItem> Products { get; set; }
+        public ICollection<ShoppingCartItem> ShoppingCartItems { get; set; }
     }
 }

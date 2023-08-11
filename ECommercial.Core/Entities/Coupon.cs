@@ -12,5 +12,7 @@ namespace ECommercial.Core.Entities
         public string Name { get; set; }
         public string Code { get; set; }
         public bool IsApplied { get; set; }
+        public DateTime ExpireDate { get; set; }
+        public decimal Value { get; set; }
     }
 }

@@ -10,8 +10,8 @@ namespace ECommercial.Core.Entities
     public class ShoppingCartItem
     {
         public int Id { get; set; }
-        public int VariantId { get; set; }
-        public int ShoppingCartId { get; set; }
+        public Variant Variant { get; set; }
+        public ShoppingCart ShoppingCart { get; set; }
         public int Quantity { get; set; }
     }
 }

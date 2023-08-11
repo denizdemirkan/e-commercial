@@ -8,10 +8,10 @@ namespace ECommercial.Core.Entities
 {
     public class Order
     {
-
         public Order()
         {
             this.Products = new HashSet<OrderItem>();
+            OrderDate = DateTime.Now;
         }
 
         public int Id { get; set; }
@@ -30,6 +30,5 @@ namespace ECommercial.Core.Entities
         public DateTime? CancelDate { get; set; }
         public bool IsCalceledByCustomer { get; set; }
         public string? CalcelReason { get; set; }
-
     }
 }
